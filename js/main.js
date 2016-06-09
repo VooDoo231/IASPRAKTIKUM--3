@@ -28,10 +28,8 @@ SizeTree.mainProgramm_cl = new Class.create({
 			var action_s = $(event_opl.target).attr("data-action");
 			switch (action_s) {
 				case 'showTree':
-					alert("ShowTree");
 					break;
-				case 'showCake':
-					alert("showCake");
+				case 'showHierachy':
 					break;
 				case 'exitProgramm':
 					var gui = require("nw.gui");
