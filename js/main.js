@@ -1,5 +1,4 @@
 $(document).ready(function () {
-	alert("Documentredy");
 	SizeTree.main = new SizeTree.mainProgramm_cl();
 });
 
@@ -68,7 +67,7 @@ SizeTree.mainProgramm_cl = new Class.create({
 	},
 	pieChart: function () {
 		var width = 300,
-			height = 150,
+			height = 300,
 			radius = Math.min(width, height) / 2;
 
 		var color = d3.scale.ordinal()
@@ -90,8 +89,18 @@ SizeTree.mainProgramm_cl = new Class.create({
 			.attr("width", width)
 			.attr("height", height)
 			.attr("data-action", "resisePieChart")
+			.attr("id", "pie")
+			.style("float", "right")
+			.style("background-color", "#c0c0c0")
+			.classed("uk-block-secondary", true)
 			.append("g")
 			.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+		d3.select("#pieChart").append("a")
+			.classed("uk-button", true)
+			.style("float", "right")
+			.append("i")
+			.classed("uk-icon-expand", true);
 
 		d3.csv("../data/data.csv", type, function (error, data) {
 			if (error) throw error;
