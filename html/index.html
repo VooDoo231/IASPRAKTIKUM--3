@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>IASPraktikum</title>
+	<meta charset="utf-8" />
+
+	<style type="text/css">
+		@import url("/uikit/css/uikit.css");
+		@import url("/css/main.css");
+	</style>
+
+	<script type="text/javascript" src="/js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="/js/inheritance.js"></script>
+	<script type="text/javascript" src="/js/tmlocal.js"></script>
+	<script type="text/javascript" src="/js/es.js"></script>
+	<script type="text/javascript" src="/js/te.js"></script>
+
+	<script type="text/javascript" src="/uikit/js/uikit.js"></script>
+	<script type="text/javascript" src="/d3_lib/d3.min.js"></script>
+
+	<script type="text/javascript" src="/js/main.js"></script>
+</head>
+<body>
+	<div>
+		<h1><img src="/img/sizetree.png" height="35" width="35" />SizeTree</h1>
+	</div>
+	<nav id="menuBar" class="uk-navbar">
+		<ul class="uk-navbar-nav">
+			<li class="uk-parent" data-uk-dropdown>
+				<a>File</a>
+				<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" style="top: 20px; left: 0px;">
+					<ul class="uk-nav uk-nav-navbar">
+						<li>
+							<a class="menuButton" data-action="exitProgramm">Exit</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="uk-parent" data-uk-dropdown>
+				<a>Path</a>
+				<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" style="top: 20px; left: 0px;">
+					<ul class="uk-nav uk-nav-navbar">
+						<li>
+							<form class="uk-form">
+								<fieldset class="uk-text-center" data-uk-margin>
+									<input id="pathInputText" type="text" placeholder="C:/">
+									<a class="menuButton uk-button" data-action="startSearch">Show</a>
+								</fieldset>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<li><a data-action="reloadTree" class="menuButton"><i data-action="reloadTree" class="uk-icon-refresh"></i></a></li>
+		</ul>
+	</nav>
+	<div  id="contentDiv">
+		<div id="treeChart" >
+
+		</div>
+		<div id="pieChart">
+			
+		</div>
+	</div>
+</body>
+</html>

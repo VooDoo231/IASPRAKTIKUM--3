@@ -1,0 +1,12 @@
+{
+	"name": "iaspraktikum",
+	"main" : "html/index.html",
+	"version": "1",
+	"window": {
+		"height": 500,
+		"width": 1000,
+		"min_height": 400,
+		"min_width": 900,
+		"frame": false
+	}
+}
