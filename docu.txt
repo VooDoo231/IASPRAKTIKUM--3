@@ -1,0 +1,34 @@
+#1. Einleitung 
+>##Entwurf einer Clientbasierten Website um seine eigene Datenstruktur zu erkennen.
+
+#2. Entwurf der Anwendung
+
+>##2.1 Benutzerschnittstelle
+
+>>###2.1.1 Anwendungsrahmen und einzelne Sichten
+>>
+
+>>###2.1.2 Zustandsmodell
+>>
+
+>##2.2 Bereitstellung Daten zur Visualisierung
+
+#3. Implementierung der Anwendung 
+
+>## 3.1 Front-End
+
+>>### 3.1.1 Aufbau der Benutzungsschnittstelle
+>>
+
+>>### 3.1.2 Ablaufsteuerung
+>>
+
+>>### 3.1.3 Visualisierung der Daten
+
+>## 3.2 Back-End
+
+>>### 3.2.1 Schnittstelle (API)
+>>
+
+>>### 3.2.2 Zugriff Dateisystem und Auswertung
+>>
